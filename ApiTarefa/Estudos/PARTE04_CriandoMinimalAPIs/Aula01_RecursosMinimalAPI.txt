@@ -1,0 +1,14 @@
+﻿1º: Minamal APIs:	
+	1.1º: As minimal APIs usam os novos recursos do C# como Global using e intruções de nível superior, de forma a otimizar a experiência de inicialização do aplicativo;
+	1.2º: Usando o novo template para criar uma Web API no VS 2022 temos que:
+		1.2.1º: Não existe mais o arquivo Startup.cs;
+		1.2.2º: É usado o novo recurso implicit usings;
+		1.2.3º: É usado o novo modelo de hospedagem com WebApplication.CreateBuilder;
+		1.2.4º: As intruções de nível superior são usadas no arquivo Program.cs (sem namespace, classe ou declarações de método);
+		1.2.5º: São usados os tipos de referência anuláveis;
+	1.3º: Criar a classe Tarefa:
+		1.3.1º: int id, string Nome, bool IsConluida;
+	1.4º: Referenciar o Microsoft.EntityFrameworkCore.InMemory;
+	1.5º: Criar a classe de contexto: AppDbContext;
+	1.6º: Registrar o contexto no serviço de injeção de dependência;
+	1.7º: Definir os endpoints da API usando os métodos de extensões: MapGet, MapPost, MapPut e MapDelete;
