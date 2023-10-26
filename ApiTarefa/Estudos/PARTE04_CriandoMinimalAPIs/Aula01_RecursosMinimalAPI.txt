@@ -12,3 +12,22 @@
 	1.5º: Criar a classe de contexto: AppDbContext;
 	1.6º: Registrar o contexto no serviço de injeção de dependência;
 	1.7º: Definir os endpoints da API usando os métodos de extensões: MapGet, MapPost, MapPut e MapDelete;
+
+2º: Web API - Minimal APIs - Código de retorno HTTP:
+	2.1º: POST - Create:
+		2.1.1º: 200 (Ok);
+		2.1.2º: 201 (Created) => 'Location' header com link /tarefas/{id};
+	2.2º: GET - Read:
+		2.2.1º: 200 (OK);
+		2.2.2º: 404 (Not Found), se ID inválido ou não foi encontrado;
+	2.3º: PUT - Update/Replace:
+		2.3.1º: 200 (OK);
+		2.3.2º: 204 (No Content);
+		2.3.3º: 404 (Not Found) => se ID inválido ou não encontrado;
+	2.4º: PATCH - Update/Modify: 
+		2.4.1º: 200 (OK);
+		2.4.2º: 204 (No Content);
+		2.4.3º: 404 (Not Found) => se ID inválido ou não encontrado;
+	2.5º: DELETE - Delete:
+		2.5.1º: 200 (OK);
+		2.5.2º: 404 (Not Found) => se ID inválido ou não encontrado;
